@@ -79,7 +79,7 @@ $RECYCLE.BIN/
 *#
 ssl
 .idea
-nbproject
+#nbproject
 public/uploads/*
 !public/uploads/.gitkeep
 
@@ -92,7 +92,7 @@ lcov.info
 pids
 logs
 results
-node_modules
+#node_modules
 .node_history
 
 ############################
@@ -105,11 +105,13 @@ coverage
 # Strapi
 ############################
 
-.env
-license.txt
+#.env
+#license.txt
 exports
-.strapi
-dist
-build
-.strapi-updater.json
-.strapi-cloud.json
+#.strapi
+#dist
+#build
+#.strapi-updater.json
+#.strapi-cloud.json
+#node_modules
+node_modules
