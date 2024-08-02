@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "airlines",
+  "info": {
+    "singularName": "airline",
+    "pluralName": "airlines",
+    "displayName": "Airline",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "Flight": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::flight.flight",
+      "mappedBy": "Airline"
+    }
+  }
+}
